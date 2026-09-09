@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<body style="margin:0;padding:0;background:#f3f6f7;font-family:Arial,'Noto Sans KR',sans-serif;color:#071c30;">
+  <div style="max-width:640px;margin:0 auto;padding:24px 16px;">
+    <div style="background:#071c30;color:#ffffff;padding:28px 24px;">
+      <p style="margin:0 0 8px;color:#5ee2c1;font-size:12px;letter-spacing:1.4px;">NEW INQUIRY</p>
+      <h1 style="margin:0;font-size:24px;line-height:1.35;">새 교육 문의가 접수되었습니다.</h1>
+    </div>
+    <div style="background:#ffffff;padding:24px;">
+      <table role="presentation" style="width:100%;border-collapse:collapse;font-size:14px;">
+        <tr><th style="width:120px;padding:12px 8px;border-bottom:1px solid #dce4e7;text-align:left;color:#50626c;">이름</th><td style="padding:12px 8px;border-bottom:1px solid #dce4e7;">{{from_name}}</td></tr>
+        <tr><th style="padding:12px 8px;border-bottom:1px solid #dce4e7;text-align:left;color:#50626c;">이메일</th><td style="padding:12px 8px;border-bottom:1px solid #dce4e7;">{{from_email}}</td></tr>
+        <tr><th style="padding:12px 8px;border-bottom:1px solid #dce4e7;text-align:left;color:#50626c;">연락처</th><td style="padding:12px 8px;border-bottom:1px solid #dce4e7;">{{phone}}</td></tr>
+        <tr><th style="padding:12px 8px;border-bottom:1px solid #dce4e7;text-align:left;color:#50626c;">소속</th><td style="padding:12px 8px;border-bottom:1px solid #dce4e7;">{{company}}</td></tr>
+        <tr><th style="padding:12px 8px;border-bottom:1px solid #dce4e7;text-align:left;color:#50626c;">문의 유형</th><td style="padding:12px 8px;border-bottom:1px solid #dce4e7;">{{inquiry_type}}</td></tr>
+        <tr><th style="padding:12px 8px;text-align:left;color:#50626c;vertical-align:top;">문의 내용</th><td style="padding:12px 8px;line-height:1.7;white-space:pre-wrap;">{{message}}</td></tr>
+      </table>
+      <p style="margin:26px 0 0;"><a href="mailto:{{from_email}}?subject=Re:%20{{inquiry_type}}" style="display:inline-block;background:#0c2a43;color:#ffffff;padding:12px 18px;text-decoration:none;font-weight:bold;">문의자에게 회신하기</a></p>
+    </div>
+    <div style="background:#e8edef;padding:20px 24px;font-size:12px;line-height:1.7;color:#405364;">
+      <p style="margin:0 0 5px;"><strong>접수 시각</strong> {{submitted_at}}</p>
+      <p style="margin:0 0 5px;"><strong>유입 페이지</strong> {{page_url}}</p>
+      <p style="margin:0 0 5px;"><strong>개인정보 동의</strong> {{privacy_agreed}}</p>
+      <p style="margin:0;"><strong>동의 시각</strong> {{agreed_at}}</p>
+    </div>
+  </div>
+</body>
+</html>
