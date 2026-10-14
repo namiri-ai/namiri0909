@@ -60,4 +60,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://0909lecturefolder.vercel.app/sitemap.xml
+Sitemap: https://namiri-3.vercel.app/sitemap.xml

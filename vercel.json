@@ -1,4 +1,19 @@
 {
   "outputDirectory": "dist",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/((?!google8fc16eace853c1ac(?:\\.html)?$|naver549b2195c014ee5fdf3c34e1215b8dbe(?:\\.html)?$).*)",
+      "destination": "https://namiri-3.vercel.app/",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Link", "value": "<https://namiri-3.vercel.app/>; rel=\"canonical\"" }
+      ]
+    }
+  ]
 }
